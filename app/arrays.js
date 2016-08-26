@@ -22,7 +22,7 @@ exports.arraysAnswers = {
     var newArray = []
     for (var i = 0; i < arr.length; i++) {
       if (arr[i] !== item) {
-        newArray.push(arr[i])
+        newArray.push(arr[i](i))
       }
     }
     return newArray
